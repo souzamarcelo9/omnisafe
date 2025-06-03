@@ -10,6 +10,7 @@ const Home = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const arrayMenu = ['home','about','services','public','contact'];
 
   // Auto-rotate testimonials
   useEffect(() => {
@@ -45,10 +46,10 @@ const Home = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8">
-            {['HOME', 'QUEM SOMOS', 'SERVIÇOS', 'PUBLICAÇÕES', 'CONTATO'].map((item) => (
+            {['HOME', 'QUEM SOMOS', 'SERVIÇOS', 'PUBLICAÇÕES', 'CONTATO'].map((item,index) => (
               <motion.a
                 key={item}
-                href="#"
+                href={ '#'+arrayMenu[index]}
                 className="text-white hover:text-blue-300 transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
               >

@@ -26,7 +26,7 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-blue-900 to-blue-700 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-b from-blue-900 to-blue-700 py-16 px-4 sm:px-6 lg:px-8" id='public'>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
